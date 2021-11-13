@@ -1,6 +1,6 @@
 # Electric Vehicle Management Project
 The agenda of creating E-Vehicle Management Project is to provide a road side assistance platform, If the user facing any problem related to Electric vehicle then He/she can raise a problem in the form of ticket and E-Vehicle management team will assign a technician from nearby users location.
-Now Let me tell you about our project , how we started building :- There were 6 members in our team, All of us successfully completed our responsibilities before the deadline in a well structured way. The project took one week to complete. Each member contributed and communicated equally.
+Now Let me tell you about our project , how we started building :- There were 6 members in our team, All of us successfully completed our responsibilities before the deadline in a well structured way. The project took one week to complete. Each member contributed and communicated equally. 
 
 # Our Initiative-
 We as a team contributed our best to create the E-Vehicle management project. I am writing this readme file to share our journey and experiences of doing collaborative work remotely.
