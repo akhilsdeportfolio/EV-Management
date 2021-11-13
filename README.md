@@ -39,4 +39,4 @@ I would like to thank, all of my team members, for their contribution. The first
 I’m feeling very proud to get such hard-working team members and also feeling very fortunate for being a part of Masai School
 
 ### For more details please checkout the blog [Click here](https://medium.com/@dchaurasiya8589/hello-readers-this-is-deepak-from-team-electric-908c2b43deab)
-Thank you for reading.
+Thank you for reading. 
