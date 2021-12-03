@@ -104,14 +104,14 @@ function SearchResults(){
     }
 
     const getNews = async(title) => {
-      let res = await fetch('http://localhost:2000/news')
+      let res = await fetch('https://mysterious-spire-55595.herokuapp.com/news')
         let newsData =  await res.json()
         console.log(newsData);
         setNewsList(newsData)
     }
 
     const getVehicles = async(title) => {
-      let res = await fetch('http://localhost:2000/vehicles')
+      let res = await fetch('https://mysterious-spire-55595.herokuapp.com/vehicles')
         let vehicleData =  await res.json()
         console.log(vehicleData);
         setVehicleList(vehicleData)
