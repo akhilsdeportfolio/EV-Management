@@ -62,7 +62,7 @@ export default function()
         //let vehiclesData = await fetch("http://localhost:2000/vehicles");
         //console.log(await vehiclesData) 
 
-        axios.post("http://localhost:2000/reviews",data).then((res)=>{
+        axios.post("https://mysterious-spire-55595.herokuapp.com/reviews",data).then((res)=>{
           alert('rating updated');
           
         });
