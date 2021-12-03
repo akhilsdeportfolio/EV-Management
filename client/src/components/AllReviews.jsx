@@ -22,7 +22,7 @@ export default function()
      const {id}=useParams();
 
      useEffect(async ()=>{          
-               let data =await axios.get(`http://localhost:2000/vehicles/${id}/reviews`);               
+               let data =await axios.get(`https://mysterious-spire-55595.herokuapp.com/vehicles/${id}/reviews`);               
                let rev = data.data.reviews;
                console.log(rev);
                setReviews(rev);
