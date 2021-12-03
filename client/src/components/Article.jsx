@@ -44,7 +44,7 @@ export default function()
      let handleSubmit=async (e)=>{
           
           comment["news_id"]=id;
-          axios.post("http://localhost:2000/comments/",comment).then(async (resp)=>{console.log(resp);alert("success");
+          axios.post("https://mysterious-spire-55595.herokuapp.com/comments/",comment).then(async (resp)=>{console.log(resp);alert("success");
           let data=await axios.get(`http://localhost:2000/news/${id}/comments`);
           console.log(data.data.news);
           setNewsArticle(data.data.news);
@@ -78,7 +78,7 @@ export default function()
 
 
      useEffect(async ()=>{
-          let data=await axios.get(`http://localhost:2000/news/${id}/comments`);
+          let data=await axios.get(`https://mysterious-spire-55595.herokuapp.com/news/${id}/comments`);
           console.log(data.data.news);
           setNewsArticle(data.data.news);
           setComments(data.data.comments)
