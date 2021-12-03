@@ -84,7 +84,7 @@ const Trending = () => {
     }, [])
 
     const getNews = async () => {
-        let res = await fetch('http://localhost:2000/news')
+        let res = await fetch('https://mysterious-spire-55595.herokuapp.com/news')
         let newsData = await res.json()
         setNewsArticles(newsData)
     }
