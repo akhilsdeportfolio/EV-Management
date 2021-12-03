@@ -100,7 +100,7 @@ export default function LoginForm() {
             email,
             password
         }
-       fetch("http://localhost:2000/users")
+       fetch("https://mysterious-spire-55595.herokuapp.com/users")
         .then((res)=>{
             let users = res.json();
             //console.log(users);
