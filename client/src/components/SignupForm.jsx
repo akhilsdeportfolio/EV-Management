@@ -108,7 +108,7 @@ export default function SignupForm() {
         }
         console.log(user)
          
-        axios.post('http://localhost:2000/users',user).then(response =>{
+        axios.post('https://mysterious-spire-55595.herokuapp.com/users',user).then(response =>{
             if (response.status >= 200 && response.status < 300) {
                 console.log(response);
                 alert("created account successfully");
