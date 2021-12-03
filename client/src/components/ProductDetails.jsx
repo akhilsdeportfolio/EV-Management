@@ -98,7 +98,7 @@ export default function ProductDetails({})
           setFeatures(features);
 
           //http://localhost:2000/vehicles/618b46a35cefe9cea7f31f94
-          axios.get(`http://localhost:2000/vehicles/${id}`).then((data)=>{
+          axios.get(`https://mysterious-spire-55595.herokuapp.com/vehicles/${id}`).then((data)=>{
                console.log(data);
                setVehicleData(data.data.vehicles);
                setRating(data.data.rating);
@@ -108,7 +108,7 @@ export default function ProductDetails({})
                
           });
           
-          axios.get(`http://localhost:2000/vehicles/${id}/reviews`).then((data)=>{
+          axios.get(`https://mysterious-spire-55595.herokuapp.com/vehicles/${id}/reviews`).then((data)=>{
                setReviews(data.data.reviews);
                console.log(reviews)
           })
