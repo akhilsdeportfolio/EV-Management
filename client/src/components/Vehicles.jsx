@@ -87,7 +87,7 @@ function Vehicles({vehiclesD}) {
     },[vehiclesD]);
 
     const getVehicle = async () => {
-        let res = await fetch('http://localhost:2000/vehicles')
+        let res = await fetch('https://mysterious-spire-55595.herokuapp.com/vehicles')
         let vehiclesData = await res.json()
         setVehicleArticles(vehiclesData)
     }
