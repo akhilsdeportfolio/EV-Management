@@ -97,7 +97,7 @@ let handleLogOut = ()=>{
 
 
 const AccountData = async () => {
-    let res = await fetch('http://localhost:2000/vehicles')
+    let res = await fetch('https://mysterious-spire-55595.herokuapp.com/vehicles')
     let vehiclesData = await res.json()
     
 }
@@ -110,8 +110,8 @@ export let Account = (props)=>{
 
 
     useEffect(()=>{
-        console.log("http://localhost:2000/users/tickets/${data._id}")
-        axios.get(`http://localhost:2000/users/tickets/${data._id}`).then((data)=>{
+        console.log("https://mysterious-spire-55595.herokuapp.com/users/tickets/${data._id}")
+        axios.get(`https://mysterious-spire-55595.herokuapp.com/users/tickets/${data._id}`).then((data)=>{
             alert("data is",JSON.stringify(data));
         }).catch((e)=>{alert("error")});
         
