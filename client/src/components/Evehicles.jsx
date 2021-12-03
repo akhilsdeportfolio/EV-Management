@@ -23,13 +23,13 @@ export default function()
 
           if(text==="all")
           {
-               let data=await axios.get(`http://localhost:2000/vehicles`)
+               let data=await axios.get(`https://mysterious-spire-55595.herokuapp.com/vehicles`)
                //console.log(data.data);
                setVehicles(data.data);
           }
           else
           {
-               let data=await axios.get(`http://localhost:2000/vehicles/tag/${e.target.innerText}`)
+               let data=await axios.get(`https://mysterious-spire-55595.herokuapp.com//vehicles/tag/${e.target.innerText}`)
                //console.log(data.data);
                setVehicles(data.data);
           }
