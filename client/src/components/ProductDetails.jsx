@@ -5,10 +5,9 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
-import { Avatar, Button } from "@mui/material";
+import { Button } from "@mui/material";
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
-import Review from './Review';
-import { Footer } from './Footer';
+
 import { Link } from 'react-router-dom';
 import AboutVehicle from "./AboutVehicle";
 import RatingSection from './RatingSection';
@@ -16,7 +15,7 @@ import Wall from './Wall';
 import { Rating } from "@mui/material";
 import FeatureCard from "./FeatureCard";
 import IconText from "./IconText";
-import { LocalConvenienceStoreOutlined, Timer } from "@material-ui/icons";
+
 import {useParams} from 'react-router-dom';
 import axios from  'axios';
 const styles={
@@ -99,22 +98,22 @@ export default function ProductDetails({})
 
           //http://localhost:2000/vehicles/618b46a35cefe9cea7f31f94
           axios.get(`https://mysterious-spire-55595.herokuapp.com/vehicles/${id}`).then((data)=>{
-               console.log(data);
+               // console.log(data);
                setVehicleData(data.data.vehicles);
                setRating(data.data.rating);
                setFeatures(data.data.vehicles.features);
-               console.log(vehicleData);
+               // console.log(vehicleData);
                //setFeatures(/data.features);
                
           });
           
           axios.get(`https://mysterious-spire-55595.herokuapp.com/vehicles/${id}/reviews`).then((data)=>{
                setReviews(data.data.reviews);
-               console.log(reviews)
+               // console.log(reviews)
           })
           
 
-          console.log("vehicleDAta",vehicleData)
+          // console.log("vehicleDAta",vehicleData)
           setGallery(gallery+`/${id}`);
 
      },[]);

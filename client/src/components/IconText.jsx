@@ -28,7 +28,7 @@ export  default function({icon,feature,text})
      {
           ic= <PowerSettingsNew/>
      }
-     console.log(JSON.stringify({icon}));
+     // console.log(JSON.stringify({icon}));
      return(<>
           <Box sx={{display:'inline-flex',direction:'row',gap:0}}>               
 
